@@ -1,5 +1,7 @@
 Arcade 1990
 
+Ayyyy, It's me!
+
 Projeto em C para organizar um fliperama, com módulos para jogadores, máquinas, venda de fichas e pontuações. No momento, os menus estão criados, mas as operações exibem mensagens de “Em construção”.
 
 Responsabilidades:
