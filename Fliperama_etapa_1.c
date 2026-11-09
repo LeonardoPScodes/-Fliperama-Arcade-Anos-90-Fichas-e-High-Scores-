@@ -171,44 +171,43 @@ void moduloFichas() {
     } while (opcao != 0);
 }
 
-// ----------------------------------------------------------------------------
-// HIGH SCORES E RELATÓRIOS ANALÍTICOS
-// Hyan Nascimento
-// ----------------------------------------------------------------------------
+//---
+// Highscore
+// Hyan Castro Nascimento
 void moduloHighScores() {
     int opcao;
     do {
-        printf("\n--- [HIGH SCORES E RELATORIOS (Hyan Nascimento)] ---\n");
-        printf("1. Registrar Nova Pontuacao (Cruza Jogador + Maquina)\n");
+        printf("\n--- Relatorios/Highscore ---\n");
+        printf("1. Adicionar pontuação (jogador + maquina)\n");
         printf("2. Exibir Tabela Geral de High Scores\n");
-        printf("3. [RELATORIO] Campeao Geral de Pontuacao (Recordista)\n");
-        printf("4. [RELATORIO] Jogo Mais Jogado / Popular\n");
+        printf("3. [RELATORIO] Recordes\n");
+        printf("4. [RELATORIO] Jogos mais jogados\n");
         printf("5. [RELATORIO] Historico de Records por Jogador\n");
         printf("0. Voltar ao Menu Principal\n");
-        printf("Escolha uma acao: ");
+        printf("Escolha uma ação: ");
         scanf("%d", &opcao);
 
         switch (opcao) {
             case 1:
-                printf("\n[Em construcao] Inserindo score e vinculando ID Jogador + ID Jogo...\n");
+                printf("\n[Em construcao]\n");
                 break;
             case 2:
-                printf("\n[Em construcao] Exibindo Hall da Fama (High Scores)...\n");
+                printf("\n[Em construcao]\n");
                 break;
             case 3:
-                printf("\n[Em construcao] Calculando o maior recordista do arcade...\n");
+                printf("\n[Em construcao]\n");
                 break;
             case 4:
-                printf("\n[Em construcao] Analisando o gabinete com mais pontuacoes registradas...\n");
+                printf("\n[Em construcao]\n");
                 break;
             case 5:
-                printf("\n[Em construcao] Filtrando records de um jogador especifico...\n");
+                printf("\n[Em construcao]\n");
                 break;
             case 0:
-                printf("\nRetornando ao menu principal...\n");
+                printf("\nRetornando\n");
                 break;
             default:
-                printf("\n[ERRO] Opcao invalida!\n");
+                printf("\nErro. Tente denovo!\n");
         }
     } while (opcao != 0);
 }
