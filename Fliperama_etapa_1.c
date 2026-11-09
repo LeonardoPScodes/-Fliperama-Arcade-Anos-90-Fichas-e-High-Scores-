@@ -74,19 +74,19 @@ void moduloJogadores() {
 
         switch (opcao) {
             case 1:
-                printf("\n[Em construcao] Cadastro de Jogador (ID, Nome, Apelido/Nick)...\n");
+                printf("\n[Em construcao] Cadastro de Jogador\n");
                 break;
             case 2:
-                printf("\n[Em construcao] Listagem geral de jogadores cadastrados...\n");
+                printf("\n[Em construcao] Listagem dejogadores cadastrados\n");
                 break;
             case 3:
-                printf("\n[Em construcao] Editando dados do jogador...\n");
+                printf("\n[Em construcao] Editar jogador\n");
                 break;
             case 4:
-                printf("\n[Em construcao] Desativando perfil de jogador...\n");
+                printf("\n[Em construcao] excluir jogador\n");
                 break;
             case 0:
-                printf("\nRetornando ao menu principal...\n");
+                printf("\nvolta ao menu principal\n");
                 break;
             default:
                 printf("\n[ERRO] Opcao invalida!\n");
