@@ -5,9 +5,9 @@
 struct Jogador {
     int idJogador;
     char nome[50];
-    char apelido[30]; // Nickname clássico (ex: "PACMAN99")
+    char apelido[30];
     int fichasDisponiveis;
-    int ativo; // 1 = Ativo, 0 = Inativo
+    int ativo;
 };
 struct Jogador listaJogadores[50];
 int totalJogadores = 0;
@@ -15,10 +15,10 @@ int totalJogadores = 0;
 // 2. Guilherme Barbosa Ferreira Chagas: Catálogo de Máquinas de Arcade (Gabinetes)
 struct MaquinaArcade {
     int idMaquina;
-    char nomeJogo[40];    // Ex: Street Fighter II, Pac-Man, Metal Slug
-    char genero[30];      // Ex: Luta, Labirinto, Tiro
-    float precoFicha;     // Custo em créditos por partida
-    int emOperacao;       // 1 = Funcionando, 0 = Em Manutenção
+    char nomeJogo[40];
+    char genero[30];
+    float precoFicha;
+    int emOperacao;
 };
 struct MaquinaArcade catalogoMaquinas[50];
 int totalMaquinas = 0;
@@ -26,10 +26,10 @@ int totalMaquinas = 0;
 // 3. William dos Santos Oliveira: Caixa e Venda de Fichas (Créditos)
 struct VendaFichas {
     int idTransacao;
-    int idJogadorComprador; // Cruzamento com a struct Jogador
+    int idJogadorComprador;
     int quantidadeFichas;
     float valorTotalPago;
-    char dataTransacao[15]; // Ex: "28/10/2026"
+    char dataTransacao[15];
 };
 struct VendaFichas historicoFichas[50];
 int totalVendasFichas = 0;
@@ -37,9 +37,9 @@ int totalVendasFichas = 0;
 // 4. Hyan Nascimento: High Scores e Relatórios de Desempenho
 struct HighScore {
     int idRegistro;
-    int idJogador;        // Cruzamento com a struct Jogador
-    int idMaquina;        // Cruzamento com a struct MaquinaArcade
-    int pontuacaoMaxima;  // Score alcançado
+    int idJogador;
+    int idMaquina;
+    int pontuacaoMaxima;
     char dataRegistro[15]; 
 };
 struct HighScore rankingHighScores[50];
