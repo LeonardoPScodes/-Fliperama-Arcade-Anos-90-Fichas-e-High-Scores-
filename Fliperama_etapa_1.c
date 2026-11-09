@@ -53,7 +53,7 @@ int totalHighScores = 0;
 // Cabeçalho Visual Retro
 void exibirCabecalho() {
     printf("\n======================================================\n");
-    printf("     ARCADE 1990 - CENTRO DE DIVERSOES ELETRONICAS     \n");
+    printf("                    ARCADE 1990     \n");
     printf("======================================================\n");
 }
 
