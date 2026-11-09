@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 // 1. Leonardo Portes Silveira: Jogadores Cadastrados
 struct Jogador {
