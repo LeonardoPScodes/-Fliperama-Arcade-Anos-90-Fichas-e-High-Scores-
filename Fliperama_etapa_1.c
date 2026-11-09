@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-// ============================================================================
-// FLIPERAMA / ARCADE ANOS 90
-// ============================================================================
-
 // 1. Leonardo Portes Silveira: Jogadores Cadastrados
 struct Jogador {
     int idJogador;
