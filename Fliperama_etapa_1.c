@@ -63,33 +63,42 @@ void exibirCabecalho() {
 void moduloJogadores() {
     int opcao;
     do {
+        limparTela();
         printf("\n--- [GESTAO DE JOGADORES (Leonardo Portes Silveira)] ---\n");
         printf("1. Cadastrar Novo Jogador\n");
         printf("2. Listar Jogadores e Saldo de Fichas\n");
         printf("3. Atualizar Dados do Jogador\n");
         printf("4. Remover / Desativar Jogador\n");
+        printf("5. Buscar Jogador por Nome / Apelido\n");
         printf("0. Voltar ao Menu Principal\n");
-        printf("Escolha uma acao: ");
-        scanf("%d", &opcao);
+        opcao = lerInteiro("Escolha uma acao: ");
+        limparTela();
 
         switch (opcao) {
             case 1:
-                printf("\n[Em construcao] Cadastro de Jogador\n");
+                cadastrarJogador();
                 break;
             case 2:
-                printf("\n[Em construcao] Listagem dejogadores cadastrados\n");
+                listarJogadores();
                 break;
             case 3:
-                printf("\n[Em construcao] Editar jogador\n");
+                atualizarJogador();
                 break;
             case 4:
-                printf("\n[Em construcao] excluir jogador\n");
+                removerJogador();
+                break;
+            case 5:
+                buscarJogadorPorNome();
                 break;
             case 0:
-                printf("\nvolta ao menu principal\n");
+                printf("\nRetornando ao menu principal...\n");
                 break;
             default:
                 printf("\n[ERRO] Opcao invalida!\n");
+        }
+
+        if (opcao != 0) {
+            pausar();
         }
     } while (opcao != 0);
 }
